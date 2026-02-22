@@ -9,10 +9,10 @@ It was developed to resolve a production bottleneck where:
 
 The service acts as a TCP listener on port 9100 and forwards incoming print data to the default Windows printer.
 
-🏗 Architecture
-Client System → TCP Port 9100 → Middleware Service → Default Printer → Dot-Matrix Printer
+---
 
-🔧 Technologies Used
+## Architecture & Technologies Used
+Client System → TCP Port 9100 → Middleware Service → Default Printer → Dot-Matrix Printer
 
  - .NET BackgroundService
  - TcpListener
@@ -20,7 +20,9 @@ Client System → TCP Port 9100 → Middleware Service → Default Printer → D
  - Async/Await
  - Windows Print Spooler
 
-⚙ How It Works
+---
+
+## How It Works
 
  - The service listens on TCP port 9100.
  - A client sends raw print data.
@@ -28,7 +30,9 @@ Client System → TCP Port 9100 → Middleware Service → Default Printer → D
  - The content is forwarded to the default printer.
  - The printer outputs via dot-matrix device.
 
-🎯 Why This Solution?
+---
+
+## Why This Solution?
 
  - Avoid hardware replacement cost
  - Eliminate production bottleneck
@@ -36,6 +40,26 @@ Client System → TCP Port 9100 → Middleware Service → Default Printer → D
  - Maintain legacy printer compatibility
  - Simple, maintainable design
 
-📈 Real-World Impact
+---
+
+## Real-World Impact
 
 This solution reduced dependency on hardware constraints and restored uninterrupted production printing without infrastructure redesign.
+
+---
+
+## Contributing
+
+Contributions, suggestions, and bug reports are welcome! Feel free to open an issue or submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License 
+
+---
+
+## Author
+
+Dimutha Kumara – https://www.linkedin.com/in/dimutha-kumara-16562220/
