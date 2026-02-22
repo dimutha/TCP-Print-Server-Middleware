@@ -14,7 +14,7 @@ The service acts as a TCP listener on port 9100 and forwards incoming print data
 ## Architecture & Technologies Used
 Client System → TCP Port 9100 → Middleware Service → Default Printer → Dot-Matrix Printer
 
- - .NET BackgroundService
+ - .NET BackgroundService (inital version with .Net Core 8.0 and latest with 10.0)
  - TcpListener
  - System.Drawing.Printing
  - Async/Await
